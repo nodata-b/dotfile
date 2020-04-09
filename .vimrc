@@ -3,6 +3,7 @@ set nocompatible
 
 set background=dark
 autocmd ColorScheme * highlight LineNr ctermfg=245
+let g:hybrid_use_iTerm_colors = 1
 colorscheme hybrid
 
 "行番号を表示"
@@ -71,7 +72,7 @@ set showcmd
 set cmdheight=1
 
 "ESC2回押すとハイライトを消す"
-nnoremap <ESC><ESC> :noh<CR>
+nnoremap <C-[><C-[> :noh<CR>
 
 "モードによってカーソルタイプを変更する"
 if has('vim_starting')
@@ -232,6 +233,10 @@ let g:syntastic_style_warning_symbol = '⚠'
 "syntastic php"
 let g:syntastic_php_checkers = ['php', 'phpcs']
 let g:syntastic_php_phpcs_args='--standard=psr2'
+
+let g:go_highlight_function_calls = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_operators = 1
 
 "phpfmt"
 Plugin 'beanworks/vim-phpfmt'
