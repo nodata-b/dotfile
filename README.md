@@ -1,8 +1,8 @@
 # dotfile
 dotfiles
 
-## install
+## Install
 git clone https://github.com/nodata-brain/dotfile
 
-## mapping
+## Mapping
 zsh dotfileLink.sh
