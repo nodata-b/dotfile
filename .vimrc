@@ -32,9 +32,10 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
 nnoremap <C-W> <C-W>w
 
-"ファイル上書き前にバックアップを作成しない"
+"ファイル上書き前にバックアップを作成する"
 set backup
 set backupdir=~/.vim/tmp/
+set backupext=.back
 
 "ビジュアルモード時に矩形選択時に仮想編集する"
 set virtualedit=block
