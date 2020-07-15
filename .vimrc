@@ -7,7 +7,7 @@ let g:hybrid_use_iTerm_colors = 1
 colorscheme hybrid
 
 "行番号を表示"
-set number
+"set number
 
 "カーソル行の背景色を変える"
 set cursorline
@@ -25,7 +25,7 @@ set clipboard=unnamed,autoselect
 syntax on
 
 "移動ショートカット"
-nnoremap s <Nop>
+"nnoremap s <Nop>
 nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
@@ -139,7 +139,7 @@ if !argc()
 endif
 
 nmap <Plug>NERDTree <Nop>
-map <Plug>NERDTree :s <Nop>
+"map <Plug>NERDTree :s <Nop>
 
 "NERDtreetabs"
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -237,6 +237,9 @@ let g:syntastic_php_phpcs_args='--standard=psr2'
 let g:go_highlight_function_calls = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_operators = 1
+let g:go_fmt_command = "gofmt"
+let g:go_null_module_warning = 0
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 
 "phpfmt"
 Plugin 'beanworks/vim-phpfmt'
@@ -252,9 +255,11 @@ Plugin 'fatih/vim-go'
 "sonictemplate"
 Plugin 'mattn/sonictemplate-vim'
 
-"🐑"
-Plugin 'vim/killersheep'
+"easymotion"
+Plugin 'easymotion/vim-easymotion'
+nmap s <Plug>(easymotion-overwin-f2)
 
+"Lsp"
 Plugin 'prabirshrestha/async.vim'
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'prabirshrestha/asyncomplete.vim'
