@@ -1,5 +1,6 @@
 "初期化"
 set nocompatible
+set autochdir
 
 set background=dark
 autocmd ColorScheme * highlight LineNr ctermfg=245
