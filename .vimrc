@@ -6,9 +6,6 @@ autocmd ColorScheme * highlight LineNr ctermfg=245
 let g:hybrid_use_iTerm_colors = 1
 colorscheme hybrid
 
-"行番号を表示"
-"set number
-
 "カーソル行の背景色を変える"
 set cursorline
 
@@ -158,28 +155,23 @@ Plugin 'thinca/vim-quickrun'
 
 "syntastic"
 Plugin 'scrooloose/syntastic'
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_loc_list_height = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-
 let g:syntasticmodemap = { 'mode': 'active', 'active_filetypes': [
   \ 'ruby', 'javascript','coffee','html', 'css', 'scss', 'haml', 'slim', 'sh',
   \ 'spec', 'vim', 'zsh', 'sass', 'eruby'] }
 let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_scss_checkers = ['scss_lint']
-
 let g:syntastic_error_symbol='×'
 let g:syntastic_style_error_symbol = '×'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_style_warning_symbol = '⚠'
-
 "syntastic php"
 let g:syntastic_php_checkers = ['php', 'phpcs']
 let g:syntastic_php_phpcs_args='--standard=psr2'
@@ -207,6 +199,7 @@ Plugin 'mattn/sonictemplate-vim'
 
 "easymotion"
 Plugin 'easymotion/vim-easymotion'
+let g:EasyMotion_do_mapping = 0
 nmap s <Plug>(easymotion-overwin-f2)
 
 "Lsp"
