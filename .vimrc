@@ -57,9 +57,6 @@ set shiftwidth=4
 set list
 set listchars=tab:^\ ,trail:~
 
-"前タブに移動"
-nnoremap gr:tabprevious
-
 "新しいウィンドウを右に開く"
 set splitright
 
