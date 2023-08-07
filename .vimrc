@@ -93,6 +93,7 @@ Plug 'lambdalisue/glyph-palette.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
+Plug 'lambdalisue/fern-bookmark.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go'
 Plug 'easymotion/vim-easymotion'
@@ -123,8 +124,10 @@ let g:airline#extensions#tabline#show_tabs = 1
 let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#show_tab_type = 1
 let g:airline#extensions#tabline#show_close_button = 0
-"Ctrl+nでファイルツリーを表示/非表示する
+
+"Ctrl+nでファイルツリーを表示/非表示する Ctrl+bでブックマーク表示
 nnoremap <C-e> :Fern . -reveal=% -drawer -toggle -width=20<CR>
+nnoremap <C-b> :Fern bookmark:/// -reveal=% -drawer -toggle -width=20<CR>
 
 "アイコン表示有効化
 let g:fern#renderer = 'nerdfont'
