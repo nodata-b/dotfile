@@ -78,6 +78,11 @@ if has('vim_starting')
     let &t_SR .= "\e[4 q"
 endif
 
+"windowsの場合powershellにする
+if has("win32") || has("win64")
+    set shell=powershell
+endif
+
 "インサートモードからノーマルの時のイラっとするのを解消する"
 set timeout timeoutlen=50
 
