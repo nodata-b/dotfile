@@ -103,6 +103,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
+Plug 'buoto/gotests-vim'
 
 call plug#end()
 
